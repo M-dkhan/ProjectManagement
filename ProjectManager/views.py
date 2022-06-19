@@ -4,6 +4,9 @@ from django.shortcuts import get_object_or_404, render
 from ProjectManager.models import Project
 
 # Create your views here.
+def home(request):
+    return render(request, 'ProjectManager/home.html')
+
 def all_project(request):
     pass
 
