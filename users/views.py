@@ -19,3 +19,7 @@ def sign_up(request):
         'form':form,
     }
     return render(request, 'registration/signup.html',context)
+
+
+def form(request):
+    return render(request, 'registration/form.html')
